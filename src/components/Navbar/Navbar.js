@@ -6,13 +6,13 @@ import NavigationItems from '../NavigationItems/NavigationItems';
 import Button from '../Button/Button';
 const navbar = (props) => (
     <header className={styles.header}>
-        <nav className='container flex flex_jc_sb flex_ai_c'>
+        <nav className='container container__pall flex flex_jc_sb flex_ai_c'>
             <a href='/' className={styles.header__logo}>
                 <img src={Logo} />
             </a>
             <Drawertogglemenu clicked={props.drawerToggleClicked} toggleOn={props.open} toggleOff={props.closed} />
             <NavigationItems className={`${styles.header__links} ${styles.hide_for_mobile}`} />
-            <Button>Request Invite</Button>
+            <Button className={`${styles.button} ${styles.button_cta} ${styles.hide_for_mobile} `}>Request Invite</Button>
         </nav>
     </header >
 );

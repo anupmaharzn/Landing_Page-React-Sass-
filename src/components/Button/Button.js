@@ -1,10 +1,11 @@
+// yo button should be consideer as UI i guess 
 import React from "react";
-import styles from './Button.module.scss';
+
 
 const button = (props) => {
 
     return (
-        <a type='button' className={`${styles.button} ${styles.header__cta} ${styles.hide_for_mobile} `} >{props.children}</a>
+        <a type='button' className={props.className}>{props.children}</a>
     );
 }
 

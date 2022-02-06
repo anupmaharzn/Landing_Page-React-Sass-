@@ -3,7 +3,8 @@
 .overlay {
   opacity: 0;
   position: absolute;
-  top: 3.75rem;
+  z-index: 1;
+  top: 3.71rem;
   left: 0px;
   bottom: 0px;
   right: 0px;
@@ -28,6 +29,7 @@
   margin-top: 1.5rem;
   border-radius: 5px;
   position: absolute;
+  z-index: 1;
   //since its position absolute we cant use margin to place it in center
   //so 100%- total margin we need i( left + right)margin
   width: calc(100% - 3rem);
