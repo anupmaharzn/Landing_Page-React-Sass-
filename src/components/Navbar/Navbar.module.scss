@@ -1,0 +1,51 @@
+@import "../../scss/index.scss";
+//& is used in nesting styling of classes
+//css ma vako vayi .header.header__logo {}
+.header {
+  //border:1px solid red;
+  nav {
+    position: relative;
+    background-color: #fff;
+    padding-top: 1.0625rem;
+    padding-bottom: 1.0625rem;
+  }
+  &__logo {
+    img {
+      width: 8.75rem;
+      height: 1.25rem;
+    }
+  }
+}
+//passed as props
+//header link style for Navigation component //desktop
+.header__links {
+  //border:1px solid red;
+
+  a {
+    position: relative;
+    font-size: $font-sm;
+    color: $grayishBlue;
+    transition: color 300ms ease-in-out;
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 5px;
+      left: 0;
+      right: 0;
+      bottom: -29px;
+      background: linear-gradient(to right, $limeGreen, $brightCyan);
+      opacity: 0;
+      transition: opacity 300ms ease-in-out;
+    }
+    &:hover {
+      color: $darkBlue;
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+}

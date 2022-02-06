@@ -1,0 +1,29 @@
+@import "../../../scss/index.scss";
+.header__toggle {
+  //mobile Menu
+  // > targe elements which are DIRECT children of a particular element.
+
+  > span {
+    display: block;
+    cursor: pointer;
+    width: 26px;
+    height: 2px;
+    background-color: $darkBlue; //global varibale use garyeko as a color
+    transition: all 300ms ease-in-out;
+    transform-origin: 3px 1px;
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+}
+.open {
+  > span:first-child {
+    transform: rotate(45deg);
+  }
+  > span:nth-child(2) {
+    opacity: 0;
+  }
+  > span:last-child {
+    transform: rotate(-45deg);
+  }
+}
