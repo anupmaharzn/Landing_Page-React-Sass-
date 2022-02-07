@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import SideDrawer from '../../components/SideDrawer/SideDrawer';
 import Aux from '../Auxiliary/Auxiliary';
 import HeroSection from '../../components/HeroSection/HeroSection';
+import FeatureSection from '../../components/FeaturesSections/FeatureSection';
 class Layout extends Component {
 
     state = {
@@ -41,6 +42,7 @@ class Layout extends Component {
                     closed={this.sideDrawerClosedHandler}
                 />
                 <HeroSection />
+                <FeatureSection />
             </Aux>
 
         );
