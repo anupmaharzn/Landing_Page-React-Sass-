@@ -1,10 +1,5 @@
 import React from 'react';
 import logoimg from "../../assets/images/logo-dark.svg";
-import facebookimg from "../../assets/images/icon-facebook.svg";
-import instagramimg from "../../assets/images/icon-instagram.svg";
-import pinterestimg from "../../assets/images/icon-pinterest.svg";
-import twitterimg from "../../assets/images/icon-twitter.svg";
-import youtubeimg from "../../assets/images/icon-youtube.svg";
 import styles from './Footer.module.scss';
 import Button from '../Button/Button';
 
