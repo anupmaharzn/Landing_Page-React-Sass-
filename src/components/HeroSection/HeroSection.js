@@ -17,7 +17,7 @@ const herosection = (props) => {
                         for spending, saving, budgeting, investing, and much more.
 
                     </p>
-                    <Button className={`${styles.button} ${styles.button_cta} `}>Request Invite</Button>
+                    <Button className={`${styles.button}`}>Request Invite</Button>
                 </div>
             </div>
 

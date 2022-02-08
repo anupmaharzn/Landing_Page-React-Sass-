@@ -12,7 +12,7 @@ const navbar = (props) => (
             </a>
             <Drawertogglemenu clicked={props.drawerToggleClicked} toggleOn={props.open} toggleOff={props.closed} />
             <NavigationItems className={`${styles.header__links} ${styles.hide_for_mobile}`} />
-            <Button className={`${styles.button} ${styles.button_cta} ${styles.hide_for_mobile} `}>Request Invite</Button>
+            <Button className={`${styles.button} ${styles.hide_for_mobile} `}>Request Invite</Button>
         </nav>
     </header >
 );

@@ -6,6 +6,7 @@ import Aux from '../Auxiliary/Auxiliary';
 import HeroSection from '../../components/HeroSection/HeroSection';
 import FeatureSection from '../../components/FeaturesSections/FeatureSection';
 import ArticleSection from '../../components/ArcticleSection/ArticleSection';
+import Footer from '../../components/Footer/Footer';
 class Layout extends Component {
 
     state = {
@@ -45,6 +46,7 @@ class Layout extends Component {
                 <HeroSection />
                 <FeatureSection />
                 <ArticleSection />
+                <Footer />
             </Aux>
 
         );
